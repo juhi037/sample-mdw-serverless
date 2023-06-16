@@ -1,0 +1,16 @@
+{
+	"name": "EncryptedAzureBlobStorageLinkedService",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"type": "AzureBlobStorage",
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		},
+		"annotations": [],
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=mappingheuristics;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0ZGVmMjM4ZC0zMTlhLTQ3MDMtODg3NC1mZGFiMGI5MGU1ZGYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		}
+	}
+}

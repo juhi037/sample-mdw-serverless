@@ -1,0 +1,17 @@
+{
+	"name": "Data exploration",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    TOP 200 *\nFROM\n    OPENROWSET(\n        BULK 'https://azsynapseanalaysisdl.blob.core.windows.net/azsynapseanalysisfile/green_tripdata_2023-01.parquet',\n        FORMAT='PARQUET'\n    ) AS [result]\n\n\nCREATE DATABASE DataExplorationDB \n                COLLATE Latin1_General_100_BIN2_UTF8",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "DataExplorationDB",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

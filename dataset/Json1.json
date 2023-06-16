@@ -1,0 +1,60 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "safetitestvso.json",
+				"container": "configurations"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"ADOUserExclusionConfiguration": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"ProjectNm": {
+								"type": "string"
+							},
+							"Scope": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"ScopeName": {
+											"type": "string"
+										},
+										"UsersList": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"CurrentAssignee": {
+														"type": "string"
+													},
+													"NextAssignee": {
+														"type": "string"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,16 @@
+{
+	"name": "GitHub1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "GitHub",
+		"typeProperties": {
+			"username": "juhi",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyMmRlYzMxNC01ODNkLTQ4NjUtYjA0OS03OTIyOGJlNzI2ZmMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
